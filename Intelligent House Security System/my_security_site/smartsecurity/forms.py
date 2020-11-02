@@ -1,31 +1,32 @@
-from .models import UserRegistration
+from .models import UserInfo
 from django import forms
 
 
-class UserForm(forms.ModelForm):
+class UserInfoForm(forms.ModelForm):
     class Meta(object):
-        model = UserRegistration
-        fields = ['name', 'age', 'flat_no', 'phone_no','profession', 'address']
+        model = UserInfo
+        fields = ['name', 'age', 'flat_no', 'phone_no',
+                  'profession', 'address', 'marig_status']
 
         widgets = {
 
-                'name': forms.TextInput(
+            'name': forms.TextInput(
                 attrs={
                     'class': 'form-control'
                 }
-            ),'age': forms.TextInput(
+            ), 'age': forms.TextInput(
                 attrs={
                     'class': 'form-control'
                 }
-            ),'flat_no': forms.TextInput(
+            ), 'flat_no': forms.TextInput(
                 attrs={
                     'class': 'form-control'
                 }
-            ),'phone_no': forms.TextInput(
+            ), 'phone_no': forms.TextInput(
                 attrs={
                     'class': 'form-control'
                 }
-            ),'profession': forms.TextInput(
+            ), 'profession': forms.TextInput(
                 attrs={
                     'class': 'form-control'
                 }
