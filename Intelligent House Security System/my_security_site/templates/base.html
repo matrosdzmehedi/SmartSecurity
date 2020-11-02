@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Intelligent House security</title>
+    <link rel="stylesheet" href="{% static 'css/my.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="bg-warning pt-2 pb-1 sticky-top">
+        <div class="row">
+
+        <div class="col-lg-5 col1 m-auto">
+          <h1 class="text-white text-center mb-0"><img class="img-responsive"
+       src="{% static 'media/logo/cctv.png' %}">
+       <span class="s1">Intelligent</span> House Security</h1>
+
+          </div>
+        <div class="col-lg-7 col2">
+          <ul class="nav float-right pr-2 justify-content-center">
+            <li class="nav-item"><a class="b1 rounded-left text-white nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="b1  text-white nav-link" class="nav-link" href="#">Admin Login</a></li>
+            <li class="nav-item"><a class="b1 text-white nav-link" href="{% url 'createuser' %}">Registration</a></li>
+            <li class="nav-item"><a class="b1 text-white nav-link" href="{% url 'createuser' %}">Registrerd Users</a></li>
+            <li class="nav-item"><a class="b1 rounded-right text-white nav-link" href="#">DataBox</a></li>
+          </ul>
+
+        </div>
+
+        </div>
+      </header>
+
+      {% block content %}
+      {% endblock content %}
+
+
+  </div>
+
+</div>
+
+</div>
+
+
+    </div>
+
+
+  </body>
+</html>

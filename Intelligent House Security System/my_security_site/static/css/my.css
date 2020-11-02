@@ -1,0 +1,45 @@
+
+
+.b1{
+  border: 5px solid white;
+
+}
+
+
+.s1{
+  color: grey;
+}
+
+.nav-item{
+  padding: 5px;
+
+
+}
+
+
+.nav-item:hover{
+  font-weight: bolder;
+}
+
+
+.bg1{
+  margin-top: 15px;
+  height: 100vh;
+  background-color: #f6f6e3;
+  border-radius: 3px;
+  border: 2px solid lightgrey;
+
+}
+.img-responsive{
+  height: 50px;
+  width: 50px;
+}
+
+.my-custom-scrollbar {
+position: relative;
+height: 200px;
+overflow: auto;
+}
+.table-wrapper-scroll-y {
+display: block;
+}
